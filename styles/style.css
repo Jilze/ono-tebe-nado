@@ -34,21 +34,19 @@ p {
 
 .header__links-list-item_no-bullit {
     list-style: none;
+    border-bottom: none;
 }
 
 .header__links-list-item {
     list-style: circle;
 }
 
-.header__links-list-item_no-bullit {
-    border-bottom: none;
-}
-
-.header__link_active {
+.header__link {
     text-decoration: none;
 }
 
 .header__link_active {
+    text-decoration: none;
     border-bottom: 1px solid;
 }
 
