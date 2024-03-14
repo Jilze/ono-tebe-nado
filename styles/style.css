@@ -10,6 +10,7 @@ p {
     font-size: 20px;
     line-height: 24px;
 }
+
 /*
 Начало header
  */
@@ -22,9 +23,6 @@ p {
 .header__links-list {
     padding-left: 50px;
     padding-top: 44px;
-}
-
-.header__links-list {
     display: flex;
     gap: 31px;
     border: none;
@@ -46,7 +44,7 @@ p {
     border-bottom: none;
 }
 
-.header__link, .header__link_active {
+.header__link_active {
     text-decoration: none;
 }
 
@@ -75,6 +73,7 @@ address {
     font-size: 18px;
     letter-spacing: 0.01em;
 }
+
 /*
  Конец header
  */
@@ -263,7 +262,7 @@ address {
 }
 
 .about__logo-image {
-    background: #000;
+    background: no-repeat center #000;
     border-radius: 50%;
     width: 240px;
     height: 240px;
@@ -299,6 +298,7 @@ address {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 185px;
+    padding-bottom: 88px;
 }
 
 .footer__address {
