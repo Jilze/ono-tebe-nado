@@ -7,13 +7,14 @@ h2 {
 
 p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
 }
 
 /*
 Начало header
  */
+
 .header {
     display: grid;
     margin-top: 92px;
@@ -41,11 +42,11 @@ p {
     list-style: circle;
 }
 
-.header__link {
+.header__link_active {
     text-decoration: none;
 }
 
-.header__link_active {
+.header__link {
     text-decoration: none;
     border-bottom: 1px solid;
 }
@@ -64,12 +65,11 @@ address {
 }
 
 .header__address {
-    width: 398px;
-    text-align: left;
-    padding-left: 191px;
-    padding-top: 6px;
-    font-size: 18px;
-    letter-spacing: 0.01em;
+    display: flex;
+    min-width: 290px;
+    justify-self: end;
+    padding-top: 7px;
+    font-size: 19px;
 }
 
 /*
@@ -113,18 +113,21 @@ address {
 .aligned-text {
     display: block;
     line-height: 1;
+    padding-top: 18px;
+    padding-right: 50px;
 }
 
-.aligned-text_center {
-    text-align: center;
+.aligned-text .aligned-text_center:first-child {
     padding-top: 20px;
     padding-right: 50px;
 }
 
+.aligned-text_center {
+    text-align: center;
+}
+
 .aligned-text_right {
     text-align: right;
-    padding-top: 20px;
-    padding-right: 51px;
     letter-spacing: 0.29em;
 }
 
@@ -137,13 +140,15 @@ address {
 }
 
 .cover__description {
-    padding: 134px 0 51px 79px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 137px 0 51px 79px;
     position: relative;
     z-index: 1;
 }
 
 .cover__description-text {
-    display: inline-block;
     color: #ffffff;
     font-size: 22px;
     font-weight: 400;
@@ -154,14 +159,14 @@ address {
 
 .bet-button {
     padding: 12px 32px;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid white;
+    color: white;
     font-weight: normal;
     font-size: 22px;
     text-transform: uppercase;
     background-color: transparent;
     font-family: Raleway, sans-serif;
-    margin-left: 71px;
+    margin-left: 76px;
 }
 
 /*
@@ -182,19 +187,21 @@ address {
 
 .lots__card-list {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 27px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     gap: 25px;
 }
 
 .lots__card-list-item {
     display: flex;
     flex: 1 0 30%;
+    min-height: 563px;
 }
 
 .card-link {
     display: flex;
-    width: 100%;
     text-decoration: none;
 }
 
@@ -203,7 +210,7 @@ address {
     z-index: 1;
     font-weight: 700;
     font-size: 22px;
-    line-height: 120%;
+    line-height: 26px;
     text-decoration-line: underline;
     text-transform: uppercase;
     color: #FFF;
@@ -212,16 +219,20 @@ address {
 .card__text {
     position: relative;
     z-index: 1;
-    color: #FFF;
+    font-size: 20px;
+    color: white;
 }
 
 .card {
-    position: relative;
-    z-index: 1;
-    padding: 50px 35px 47px 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    padding: 51px 40px 48px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .card_type_film {
@@ -237,8 +248,7 @@ address {
 }
 
 .lots__look-more-link {
-    padding-top: 50px;
-    margin-left: 37px;
+    margin-left: 40px;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -256,7 +266,7 @@ address {
 .about__column {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-top: 180px;
+    padding: 183px 24px 0 16px;
 }
 
 .about__logo-image {
@@ -265,9 +275,7 @@ address {
     width: 240px;
     height: 240px;
     background-image: url("../images/logo-white.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60%;
+    background-size: 62%;
 }
 
 .about__logo {
@@ -276,13 +284,20 @@ address {
 }
 
 .about__title {
-    padding-top: 103px;
-    padding-left: 16px;
-    word-spacing: 0.15em;
+    padding-top: 101px;
+    padding-left: 13px;
 }
 
 .about__text {
-    padding-top: 103px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.about__text:nth-child(2) {
+    margin-top: 100px;
+    margin-bottom: 24px;
 }
 
 /*
@@ -295,15 +310,12 @@ address {
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 185px;
-    padding-bottom: 88px;
+    padding: 182px 50px 88px;
 }
 
 .footer__address {
-    width: 398px;
     text-align: left;
-    padding-left: 50px;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.01em;
 }
 
@@ -321,19 +333,23 @@ address {
     list-style: none;
 }
 
-.footer__menu-link_active {
+.footer__menu-link.footer__menu-link_active {
     text-decoration: none;
+    border-bottom: none;
 }
 
 .footer__menu-link {
     text-decoration: none;
+    font-size: 18px;
+    line-height: 21px;
     border-bottom: 1px solid;
 }
 
 .footer__social-list {
     display: flex;
-    justify-content: center;
-    gap: 45px;
+    justify-content: end;
+    align-items: baseline;
+    gap: 48px;
 }
 
 .footer__social-list-item {
