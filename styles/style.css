@@ -149,7 +149,7 @@ address {
 }
 
 .cover__description-text {
-    color: #ffffff;
+    color: white;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
@@ -213,7 +213,7 @@ address {
     line-height: 26px;
     text-decoration-line: underline;
     text-transform: uppercase;
-    color: #FFF;
+    color: white;
 }
 
 .card__text {
