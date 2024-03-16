@@ -295,9 +295,11 @@ address {
     gap: 25px;
 
 }
-.about__title h2{
+
+.about__title h2 {
     padding-bottom: 75px;
 }
+
 .about__text {
     font-size: 20px;
     font-weight: 400;
